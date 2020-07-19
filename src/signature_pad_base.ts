@@ -130,6 +130,13 @@ export default class SignaturePadBase {
   private _strokeUpdate(
     event: MouseEvent | Touch | WechatMiniprogram.Touch,
   ): void {
+    if (this.data.length === 0) {
+      // This can happen if clear() was called while a signature is still in progress,
+      // or if there is a race condition between start/update events.
+      this.strokeBegin(event);
+      return;
+    }
+
     // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
     // @ts-ignore wechatMiniProgram declaration error
     const x = event.clientX || event.x;
