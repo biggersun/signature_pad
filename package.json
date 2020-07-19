@@ -1,13 +1,20 @@
 {
-  "name": "signature_pad",
+  "name": "signature_pad2",
   "description": "Library for drawing smooth signatures.",
-  "version": "3.0.0-beta.3",
-  "homepage": "https://github.com/szimek/signature_pad",
+  "version": "0.0.1",
+  "homepage": "https://github.com/biggersun/signature_pad",
   "author": {
-    "name": "Szymon Nowak",
-    "email": "szimek@gmail.com",
-    "url": "https://github.com/szimek"
+    "name": "biggersun",
+    "email": "sxxlovelive@gmail.com",
+    "url": "https://github.com/biggersun"
   },
+  "keywords": [
+    "sinature_pad",
+    "wechat",
+    "miniprogram",
+    "小程序",
+    "手写板"
+  ],
   "license": "MIT",
   "source": "src/signature_pad.ts",
   "main": "dist/signature_pad.umd.js",
@@ -27,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/szimek/signature_pad.git"
+    "url": "https://github.com/biggersun/signature_pad.git"
   },
   "files": [
     "src",
