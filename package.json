@@ -1,5 +1,5 @@
 {
-  "name": "signature_pad2",
+  "name": "signature_pad_wechat",
   "description": "Library for drawing smooth signatures.",
   "version": "0.0.1",
   "homepage": "https://github.com/biggersun/signature_pad",
@@ -26,7 +26,7 @@
     "clean": "yarn run del dist",
     "format": "prettier --write '{src,tests}/**/*.{js,ts}'",
     "lint": "eslint src/**/*.ts tests/**/*.ts",
-    "prepublishOnly": "yarn run build",
+    "prepublishOnly": "npm run lint && npm run build",
     "serve": "serve -l 9000 docs",
     "start": "yarn run build && yarn run serve",
     "test": "jest --coverage",
