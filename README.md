@@ -1,4 +1,4 @@
-## signature_pad2
+## signature_pad_wechat
 
 signature_pad support wechat miniprogram
 
@@ -8,15 +8,15 @@ This is a rewrite of original signature_pad, starting and borrowing from [this f
 
 ```bash
 # with npm
-npm install signature_pad2 -S
+npm install signature_pad_wechat -S
 # with yarn
-yarn add signature_pad2 -S
+yarn add signature_pad_wechat -S
 ```
 
 ## Usage
 
 ```typescript
-import { SignaturePad, SignaturePadWechat } from 'signature_pad2';
+import { SignaturePad, SignaturePadWechat } from 'signature_pad_wechat';
 
 // 在微信小程序中使用
 wx.createSelectorQuery()
